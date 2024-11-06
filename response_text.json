@@ -1,0 +1,77 @@
+[
+  {
+    "questao": "Qual número é menor: 5 ou 2?",
+    "resposta": "2",
+    "alternativas": ["1", "2", "3", "5"]
+  },
+  {
+    "questao": "Quantos objetos há nesta lista: carro, carro, carro, carro?",
+    "resposta": "4",
+    "alternativas": ["2", "3", "4", "5"]
+  },
+  {
+    "questao": "Qual número está escrito corretamente: seis?",
+    "resposta": "6",
+    "alternativas": ["4", "6", "8", "10"]
+  },
+  {
+    "questao": "Complete a sequência: 1, 3, _ , 7",
+    "resposta": "5",
+    "alternativas": ["2", "4", "5", "6"]
+  },
+  {
+    "questao": "Qual é a diferença entre 7 e 2?",
+    "resposta": "5",
+    "alternativas": ["3", "4", "5", "6"]
+  },
+  {
+    "questao": "Qual número representa a palavra 'cinco'?",
+    "resposta": "5",
+    "alternativas": ["3", "5", "7", "9"]
+  },
+  {
+    "questao": "Conte os quadrados: ⬛⬛⬛",
+    "resposta": "3",
+    "alternativas": ["1", "2", "3", "4"]
+  },
+  {
+    "questao": "Qual número vem depois do 8?",
+    "resposta": "9",
+    "alternativas": ["7", "8", "9", "10"]
+  },
+  {
+    "questao": "Qual número está escrito corretamente: nove?",
+    "resposta": "9",
+    "alternativas": ["6", "8", "9", "11"]
+  },
+  {
+    "questao": "Complete a sequência: 10, 9, _ , 7",
+    "resposta": "8",
+    "alternativas": ["6", "7", "8", "9"]
+  },
+  {
+    "questao": "Qual é a soma de 4 + 3?",
+    "resposta": "7",
+    "alternativas": ["5", "6", "7", "8"]
+  },
+  {
+    "questao": "Qual número representa a palavra 'dois'?",
+    "resposta": "2",
+    "alternativas": ["1", "2", "3", "4"]
+  },
+  {
+    "questao": "Conte os círculos: ⭕⭕⭕⭕",
+    "resposta": "4",
+    "alternativas": ["2", "3", "4", "5"]
+  },
+  {
+    "questao": "Qual número vem antes do 6?",
+    "resposta": "5",
+    "alternativas": ["3", "4", "5", "6"]
+  },
+  {
+    "questao": "Qual número está escrito corretamente: sete?",
+    "resposta": "7",
+    "alternativas": ["5", "6", "7", "9"]
+  }
+]
