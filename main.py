@@ -1,3 +1,6 @@
+from dotenv import load_dotenv
+import os
+
 import google.generativeai as genai
 import json
 import pygame
@@ -5,7 +8,9 @@ import sys
 
 # Configuração da API
 
-genai.configure(api_key="AIzaSyC6Y0qOQJrLWPrQBim7oKE7nnJ0l-k00b4")
+load_dotenv()
+api_token = os.getenv("GOOGLE_API_TOKEN")
+genai.configure(api_key=api_token)
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 qt_perguntas = 5  # número de perguntas para o quiz
@@ -20,15 +25,31 @@ json_schema = """
     }
     """
 exemplos = """
+    
+     {
+        "questao": "Qual o símbolo que representa a operação de adição?",
+        "resposta": "+",
+        "alternativas": ["-", "+", "*", "/"]
+    },
+    {
+        "questao": "Qual número corresponde à palavra "quatro"?",
+        "resposta": "4",
+        "alternativas": ["1", "2", "3", "4"]
+    },
     {
         "questao": "Qual número é maior: 3 ou 7?",
         "resposta": "7",
         "alternativas": ["3", "5", "7", "9"]
     },
     {
-        "questao": "Quantos objetos há nesta lista: maçã, maçã, maçã?",
+        "questao": "Se você tem 5 maçãs e dá 2 delas, quantas maçãs restam?",
         "resposta": "3",
         "alternativas": ["1", "2", "3", "4"]
+    },
+    {
+        "questao": "Quanto é 2 + 3?",
+        "resposta": "5",
+        "alternativas": ["2", "3", "5", "7"]
     }
 """
 
@@ -139,3 +160,4 @@ perguntas = gerar_perguntas()
 quiz_game(perguntas)
 
 pygame.quit()
+
